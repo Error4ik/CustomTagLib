@@ -9,34 +9,14 @@
     <uri>http://example2.com</uri>
 
     <tag>
-        <name>timeTag</name>
-        <tag-class>org.example.project.TimeTag</tag-class>
-        <body-content>tagdependent</body-content>
-    </tag>
-
-    <tag>
         <name>textBodyTag</name>
         <tag-class>org.example.project.TextBodyTag</tag-class>
         <body-content>JSP</body-content>
 
         <attribute>
-            <name>iterations</name>
-            <required>true</required>
-        </attribute>
-        <attribute>
-            <name>value</name>
-            <required>true</required>
-        </attribute>
-        <attribute>
             <name>json</name>
             <required>true</required>
             <rtexprvalue>true</rtexprvalue>
         </attribute>
-    </tag>
-
-    <tag>
-        <name>expressionBodyTag</name>
-        <tag-class>org.example.project.ExpressionBodyTag</tag-class>
-        <body-content>tagdependent</body-content>
     </tag>
 </taglib>
