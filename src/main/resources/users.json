@@ -1,0 +1,47 @@
+﻿[
+  {
+    "id": 1,
+    "name": "John",
+    "surname": "Doe"
+  },
+  {
+    "id": 2,
+    "name": "Mary",
+    "surname": "Jain"
+  },
+  {
+    "id": 3,
+    "name": "Garry",
+    "surname": "Sidorov"
+  },
+  {
+    "id": 4,
+    "name": "Sara",
+    "surname": "Ivanova"
+  },
+  {
+    "id": 5,
+    "name": "Misha",
+    "surname": "Petrov"
+  },
+  {
+    "id": 6,
+    "name": "Irina",
+    "surname": "Galkina"
+  },
+  {
+    "id": 7,
+    "name": "Masha",
+    "surname": "Chernova"
+  },
+  {
+    "id": 8,
+    "name": "Petr",
+    "surname": "Sidorov"
+  },
+  {
+    "id": 9,
+    "name": "Ilya",
+    "surname": "Smirnov"
+  }
+]
