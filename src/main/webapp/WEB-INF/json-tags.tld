@@ -9,8 +9,8 @@
     <uri>http://example2.com</uri>
 
     <tag>
-        <name>textBodyTag</name>
-        <tag-class>org.example.project.TextBodyTag</tag-class>
+        <name>jsonTag</name>
+        <tag-class>org.example.project.tag.JsonTag</tag-class>
         <body-content>JSP</body-content>
 
         <attribute>

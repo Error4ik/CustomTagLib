@@ -1,12 +1,11 @@
-package org.example.project;
-
+package org.example.project.tag;
 
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.tagext.TagSupport;
 import java.io.IOException;
 
-public class TextBodyTag extends TagSupport {
+public class JsonTag extends TagSupport {
     private String json;
 
     @Override
@@ -16,7 +15,7 @@ public class TextBodyTag extends TagSupport {
         try {
             out.print("<div>");
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new JspException(e);
         }
         return EVAL_BODY_INCLUDE;
     }
@@ -28,7 +27,7 @@ public class TextBodyTag extends TagSupport {
         try {
             out.print("</div>");
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new JspException(e);
         }
         return EVAL_PAGE;
     }
@@ -38,9 +37,9 @@ public class TextBodyTag extends TagSupport {
         JspWriter out = pageContext.getOut();
 
         try {
-            out.print(json);
+            out.print(String.format("<pre>%s</pre>", json));
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new JspException(e);
         }
         return SKIP_BODY;
     }

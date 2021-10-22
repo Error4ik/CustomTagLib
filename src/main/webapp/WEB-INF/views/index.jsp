@@ -3,9 +3,12 @@
 <%@ taglib uri="jsonTags" prefix="ex" %>
 <%@ page isELIgnored="false" %>
 <html>
+<head>
+    <title>Index</title>
+</head>
 <body>
-<ex:textBodyTag json="${users}">
+<ex:jsonTag json="${json}">
 
-</ex:textBodyTag>
+</ex:jsonTag>
 </body>
 </html>
