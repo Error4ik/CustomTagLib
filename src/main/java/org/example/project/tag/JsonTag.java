@@ -1,11 +1,14 @@
 package org.example.project.tag;
 
+import org.example.project.util.JsonFormatting;
+
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.tagext.TagSupport;
 import java.io.IOException;
 
 public class JsonTag extends TagSupport {
+    private final JsonFormatting jsonFormatting = new JsonFormatting();
     private String json;
 
     @Override
@@ -36,6 +39,7 @@ public class JsonTag extends TagSupport {
     public int doAfterBody() throws JspException {
         JspWriter out = pageContext.getOut();
 
+        json = jsonFormatting.format(json);
         try {
             out.print(String.format("<pre>%s</pre>", json));
         } catch (IOException e) {
