@@ -4,6 +4,11 @@
     "homeTown": "Metro City",
     "formed": 2016,
     "secretBase": "Super tower",
+    "user": {
+      "name": "Molecule Man",
+      "age": 29,
+      "secretIdentity": "Dan Jukes"
+    },
     "active": true,
     "members": [
       {
